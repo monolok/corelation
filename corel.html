@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Corelation</title>
+	<script src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+	<script src="jquery-1.11.3.min.js"></script>		
+	<script type="text/javascript" src="corel.js"></script>
+</head>
+<body>
+
+<form id="tableVar">
+  Variable 1: (Number only)<input type="text" id="var1"><br>
+  Variable 2: (Number only)<input type="text" id="var2"><br>
+  <button onclick="myFunction(event)">Push data</button>  
+  <!-- put type="button" to not refresh when clicked -->
+  <button onclick="corelation(event)">Corelation</button>
+</form>
+
+<div>
+	<p>A positive correlation is a relationship between two variables where if one variable increases, the other one also increases. A positive correlation also exists in one decreases and the other also decreases.</p>
+</div>
+
+<div>
+	<div id="data_output"></div>
+</div>
+</br>
+<div>
+	<div>Corelation is:</div>
+	<div id="output" style="color: red;"></div>	
+</div>
+</br>
+<div id="chart-container">FusionCharts will render here</div>
+</body>
+</html>
